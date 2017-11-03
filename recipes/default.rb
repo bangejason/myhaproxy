@@ -9,6 +9,12 @@ node.default['haproxy']['members'] = [{
     'ipaddress' => '172.31.29.144',
     'port' => 80,
     'ssl_port' => 80
-  }]
+  },{
+    'hostname' => 'ec2-52-90-162-183.compute-1.amazonaws.com',
+    'ipaddress' => '52.90.162.183',
+    'port' => 80,
+    'ssl_port' => 80
+  }
+]
 
 include_recipe 'haproxy::manual'
